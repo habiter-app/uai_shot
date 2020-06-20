@@ -5,7 +5,7 @@ defmodule UaiShot.MixProject do
     [
       app: :uai_shot,
       version: "0.4.0",
-      elixir: "~> 1.9.1",
+      elixir: "~> 1.10.3",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,

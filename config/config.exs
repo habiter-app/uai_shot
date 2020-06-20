@@ -12,7 +12,8 @@ config :uai_shot, UaiShotWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "XaMSFWbyYm1FJmgFqpz7wcEjKmc9hDNYPhCHRaKEiMCscLlErDuHD63Oe3iXNCxm",
   render_errors: [view: UaiShotWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: UaiShot.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: UaiShot.PubSub, adapter: Phoenix.PubSub.PG2],
+  http: [ip: {192, 168, 0, 11}, port: 4000]
 
 # Configures Elixir's Logger
 config :logger, :console,

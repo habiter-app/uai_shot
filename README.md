@@ -1,4 +1,8 @@
+# Fork comments
+
 This is a interesting repo for a minimal example for a multiplayer game built in elixir.
+How the system work is that there is a Javascript game engine (built using a library called Phaser) that listen to Elixir channels (through web sockets).
+Elixir has a Game server (with game engine, using the supervisor pattern) that send information to the sockets through GameChannel module.
 
 ----
 
